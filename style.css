@@ -1,54 +1,68 @@
-    *{  margin: 0px;
-        padding:0px;
-        box-sizing: border-box;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=MuseoModerno:wght@400;700&display=swap');
     
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+.main{
+    background-image: url(img/photo_2020-10-05_17-10-27\ 1.svg), linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+ul.hr {
+    margin: 0;
+    /* Обнуляем значение отступов */
+    padding: 4px;
+    /* Значение полей */
+}
 
-    ul.hr{
-        margin: 0; /* Обнуляем значение отступов */
-        padding: 4px; /* Значение полей */
-    }
+ul.hr,
+li {
+    display: inline;
+    /* Отображать как строчный элемент */
+    margin-right: 50px;
+    /* Отступ слева */
+    padding: 3px;
+    /* Поля вокруг текста */
+}
+li:hover{
+    color: rgba(245,204,51,1);
+}
+.top-header{
+    background: black;
+    width: 100%;
+    padding-top: 48px;
+    padding-bottom: 38px;   
+}
+.whitetext{
+    color: white;
+}
 
-    ul.hr,
-    li{
-        display: inline; /* Отображать как строчный элемент */
-        margin-right: 50px; /* Отступ слева */
-        padding: 3px; /* Поля вокруг текста */
-    }
-   
-   header{
-        width: 100%;
-    }
-
-   .top-header{
-       background: rgba(31,31,31,0.6);
-       float: left;
-       width: 100%;
-       padding-top: 48px;
-       padding-bottom: 49px;
-    }
-
-   .bottom-header{
-       text-align: center;
-       font-size: 2em;
-       padding: 335px;
-    }
-
-   .whitetext{
-       color: white;
-    }
-
-    h2{ 
-    font-size: 72px;
-    margin-left: 295px;
-    }
-
-    nav{
-    float:inline-end;
-    font-size: 25px;
-    }
-
-    .container{
-    max-width: 1140px;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1600px;
     margin: 0 auto;
-    }
+}
+
+h2{
+font-size: 72px;
+margin: 234px  0 0 295px;
+font-family: 'Montserrat';
+}
+.textmodern{
+font-size: 40px;
+margin-top:139px;
+text-align: center;
+font-family: 'MuseoModerno';
+}
+nav{
+    font-size: 25px;
+    font-family: Montserrat;
+}
