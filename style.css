@@ -1,0 +1,54 @@
+    *{  margin: 0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    
+
+    ul.hr{
+        margin: 0; /* Обнуляем значение отступов */
+        padding: 4px; /* Значение полей */
+    }
+
+    ul.hr,
+    li{
+        display: inline; /* Отображать как строчный элемент */
+        margin-right: 50px; /* Отступ слева */
+        padding: 3px; /* Поля вокруг текста */
+    }
+   
+   header{
+        width: 100%;
+    }
+
+   .top-header{
+       background: rgba(31,31,31,0.6);
+       float: left;
+       width: 100%;
+       padding-top: 48px;
+       padding-bottom: 49px;
+    }
+
+   .bottom-header{
+       text-align: center;
+       font-size: 2em;
+       padding: 335px;
+    }
+
+   .whitetext{
+       color: white;
+    }
+
+    h2{ 
+    font-size: 72px;
+    margin-left: 295px;
+    }
+
+    nav{
+    float:inline-end;
+    font-size: 25px;
+    }
+
+    .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    }
