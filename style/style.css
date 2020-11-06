@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=MuseoModerno:wght@400;700&display=swap');
+
+:root {
+    --color-light: rgb(0, 252, 0);
+    --name-font-size: 28px;
+    --who-font-size: 27px;
+    --font-family: Montserrat;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+padding: 15px;
+}
+
+a:hover{
+    color: var(--color-light)
+}
+
+.container {
+    text-align: center;
+    display: block;
+    max-width: 1672px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width : 320px) {
+
+}
+
+/*Header*/
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 141px;
+    background: rgba(31, 31, 31, 0.6);
+    text-decoration: none;
+}
+
+.background {
+    background-image: url(img/background.jpg), linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-left: 95px;
+    width: 152px;
+    height: 44px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+    padding: 60px 0 60px 0;
+    margin-right: 153px;
+    ;
+}
+
+.drop-down-menu {
+    display: none;
+    position: absolute;
+    padding-top: 15px;
+    background-color: rgba(31, 31, 31, 0.6);
+    left: -55px;
+    margin-top: 15px;
+    border-radius: 20px;
+    z-index: 1;
+    margin-top: 55px;
+    padding-right: 50px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.drop-down-menu .el {
+    padding: 12px 40px;
+    margin-right: 0px;
+    display: block;
+    margin-right: -50px;
+    border-radius: 20px;
+}
+
+
+
+.drop-down-menu li:hover {
+    background-color: rgba(12, 12, 12, 0.6) ;
+    color: var(--color-light)
+}
+
+
+.dropdown:hover .drop-down-menu {
+    display: block;
+}
+
+.hr {
+    margin: 0;
+    /* Обнуляем значение отступов */
+    padding: 4px;
+    /* Значение полей */
+}
+
+.hr .el {
+    display: inline;
+    /* Отображать как строчный элемент */
+    margin-right: 50px;
+    /* Отступ слева */
+
+    /* Поля вокруг текста */
+}
+
+.el:hover {
+    color: var(--color-light);
+}
+
+
+/*Header end*/
+
+
+
+
+/*Section 1*/
+.mainimg {
+    width: 1190px;
+    height: 277px;
+    left: 365px;
+    top: 322px;
+    margin-top: 181px;
+}
+
+.mainwords {
+    margin-top: 165px;
+}
+
+.btndown {
+    padding-bottom: 69px;
+    padding-top: 83px;
+}
+
+/*Section 1 end*/
+
+
+
+
+
+h2 {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 72px;
+    margin: 234px 0 150px 0;
+    font-weight: 700;
+}
+
+h3.name {
+    font-family: var(--font-family);
+    font-size: var(--name-font-size);
+}
+
+p.whoiam {
+    font-size: var(--who-font-size);
+    font-family: var(--font-family);
+}
+
+.textmodern {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'MuseoModerno';
+}
+
+.textmontserrat {
+    font-size: 25px;
+    font-family: Montserrat;
+}
+
+
+.whitetext {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+
+#svgcolorfill {
+    fill: var(--color-light);
+}
+
+#svgcolorstroke {
+    stroke: var(--color-light);
+    stroke-width: 3px;
+}
+
+
+
+
+
+
+/*Section 2*/
+.technology-item {
+    height: 225px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 0 30px;
+    display: flex;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+
+}
+
+.technology-cell {
+    max-width: 100%;
+    text-align: center;
+}
+
+.technology {
+    border-radius: 150px;
+    margin-bottom: 17px;
+}
+
+/*Section 2 end*/
+
+
+
+
+/*Section 3*/
+.portfolio {
+    min-width: 25%;
+    max-width: 25%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 -10px 0 10px;
+}
+
+.portfoliowork {
+    max-width: 100%;
+    text-align: center;
+}
+
+.square {
+    width: 225px;
+    height: 225px;
+    background-color: var(--color-light);
+    margin-bottom: 17px;
+}
+
+
+/*Section 3 end*/
+
+
+
+
+/*Section 4 */
+
+.cellteam {
+    min-width: 25%;
+    max-width: 25%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 -10px 0 10px;
+}
+
+.teammember {
+    max-width: 100%;
+    text-align: center;
+}
+
+.circle {
+    width: 225px;
+    height: 225px;
+    background-color: var(--color-light);
+    border-radius: 150px;
+    margin-bottom: 17px;
+}
+
+/*Section 4 end*/
+
+
+
+
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
