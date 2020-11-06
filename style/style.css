@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=MuseoModerno:wght@400;700&display=swap');
 
 :root {
-    --color-light: rgb(0, 252, 0);
+    --color-light: rgb(0, 255, 0);
     --name-font-size: 28px;
     --who-font-size: 27px;
     --font-family: Montserrat;
@@ -22,25 +22,40 @@ padding: 15px;
 a:hover{
     color: var(--color-light)
 }
+h2{
+    margin: 0px;
+}
+
+.container_head {
+    padding-top: 141px;
+    text-align: center;
+    display: block;
+    max-width: 1350px;
+    margin: 0 auto;
+}
 
 .container {
     text-align: center;
     display: block;
-    max-width: 1672px;
+    max-width: 1350px;
     margin: 0 auto;
 }
-
 
 @media only screen and (max-width : 320px) {
 
 }
 
 /*Header*/
+header{
+    position: absolute;
+    top:0;
+}
 .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 141px;
+    height: 110px;
+    width: 99vw;
     background: rgba(31, 31, 31, 0.6);
     text-decoration: none;
 }
@@ -54,7 +69,8 @@ a:hover{
 }
 
 .logo {
-    margin-left: 95px;;
+    margin-left: 95px;
+    margin-top: 8px;
 }
 
 .dropdown {
@@ -121,6 +137,10 @@ a:hover{
     color: var(--color-light);
 }
 
+.gamburgmenu{
+    display: none;
+}
+
 
 /*Header end*/
 
@@ -128,21 +148,24 @@ a:hover{
 
 
 /*Section 1*/
+.main_section{
+    height: 1080px;
+}
+
 .mainimg {
     width: 1190px;
     height: 277px;
-    left: 365px;
-    top: 322px;
     margin-top: 181px;
 }
 
 .mainwords {
-    margin-top: 165px;
+    margin-top: 145px; /*165*/
+    margin-bottom: 0px;
 }
 
 .btndown {
-    padding-bottom: 69px;
-    padding-top: 83px;
+    padding-bottom: 65px; /*69*/
+    padding-top: 70px; /*83*/
 }
 
 /*Section 1 end*/
@@ -155,7 +178,6 @@ h2 {
     text-align: center;
     font-family: Montserrat;
     font-size: 72px;
-    margin: 234px 0 150px 0;
     font-weight: 700;
 }
 
@@ -170,7 +192,7 @@ p.whoiam {
 }
 
 .textmodern {
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
     font-family: 'MuseoModerno';
 }
@@ -234,12 +256,22 @@ p.whoiam {
     margin-bottom: 17px;
 }
 
+.technology_section{
+    margin-top: 0px;
+    height: 945px;
+}
+
 /*Section 2 end*/
 
 
 
 
 /*Section 3*/
+.portfolio_section{
+margin-top: 0px;
+height: 1173px;
+background-color:#FAFAFA;
+}
 .portfolio {
     min-width: 33%;
     justify-content: center;
@@ -267,6 +299,10 @@ p.whoiam {
 
 
 /*Section 4 */
+
+.team_section{
+    height: 869px;
+}
 
 .cellteam {
     min-width: 25%;
