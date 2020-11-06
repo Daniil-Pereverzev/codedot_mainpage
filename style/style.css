@@ -54,9 +54,7 @@ a:hover{
 }
 
 .logo {
-    margin-left: 95px;
-    width: 152px;
-    height: 44px;
+    margin-left: 95px;;
 }
 
 .dropdown {
@@ -243,9 +241,7 @@ p.whoiam {
 
 /*Section 3*/
 .portfolio {
-    min-width: 25%;
-    max-width: 25%;
-    height: 400px;
+    min-width: 33%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -258,8 +254,8 @@ p.whoiam {
 }
 
 .square {
-    width: 225px;
-    height: 225px;
+    width: 300px;
+    height: 300px;
     background-color: var(--color-light);
     margin-bottom: 17px;
 }
