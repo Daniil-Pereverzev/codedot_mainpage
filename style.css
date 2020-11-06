@@ -7,16 +7,45 @@
     --font-family: Montserrat;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
+body {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+a {
+color: #fff;
+text-decoration: none;
+padding: 15px;
+}
 
-@media only screen and (max-width : 320px) {}
+a:hover{
+    color: var(--color-light)
+}
 
-.background{
+.container {
+    text-align: center;
+    display: block;
+    max-width: 1672px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width : 320px) {
+
+}
+
+/*Header*/
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 141px;
+    background: rgba(31, 31, 31, 0.6);
+    text-decoration: none;
+}
+
+.background {
     background-image: url(img/background.jpg), linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
     background-blend-mode: darken;
     background-size: cover;
@@ -24,6 +53,55 @@
     background-repeat: no-repeat;
 }
 
+.logo {
+    margin-left: 95px;
+    width: 152px;
+    height: 44px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline;
+    padding: 60px 0 60px 0;
+    margin-right: 153px;
+    ;
+}
+
+.drop-down-menu {
+    display: none;
+    position: absolute;
+    padding-top: 15px;
+    background-color: rgba(31, 31, 31, 0.6);
+    left: -55px;
+    margin-top: 15px;
+    border-radius: 20px;
+    z-index: 1;
+    margin-top: 55px;
+    padding-right: 50px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.drop-down-menu .el {
+    padding: 12px 40px;
+    margin-right: 0px;
+    display: block;
+    margin-right: -50px;
+    border-radius: 20px;
+}
+
+
+
+.drop-down-menu li:hover {
+    background-color: rgba(12, 12, 12, 0.6) ;
+    color: var(--color-light)
+}
+
+
+.dropdown:hover .drop-down-menu {
+    display: block;
+}
 
 .hr {
     margin: 0;
@@ -41,29 +119,39 @@
     /* Поля вокруг текста */
 }
 
-.header-background {
-    background: rgba(31, 31, 31, 0.6);
-    width: 100%;
+.el:hover {
+    color: var(--color-light);
 }
 
-.whitetext {
-    color: white;
-    text-decoration: none;
+
+/*Header end*/
+
+
+
+
+/*Section 1*/
+.mainimg {
+    width: 1190px;
+    height: 277px;
+    left: 365px;
+    top: 322px;
+    margin-top: 181px;
 }
 
-.container {
-    text-align: center;
-    display: block;
-    max-width: 1672px;
-    margin: 0 auto;
+.mainwords {
+    margin-top: 165px;
 }
 
-.header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 141px;
+.btndown {
+    padding-bottom: 69px;
+    padding-top: 83px;
 }
+
+/*Section 1 end*/
+
+
+
+
 
 h2 {
     text-align: center;
@@ -94,7 +182,67 @@ p.whoiam {
     font-family: Montserrat;
 }
 
-.cellteam {
+
+.whitetext {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+
+#svgcolorfill {
+    fill: var(--color-light);
+}
+
+#svgcolorstroke {
+    stroke: var(--color-light);
+    stroke-width: 3px;
+}
+
+
+
+
+
+
+/*Section 2*/
+.technology-item {
+    height: 225px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 0 30px;
+    display: flex;
+    font-size: 36px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+
+}
+
+.technology-cell {
+    max-width: 100%;
+    text-align: center;
+}
+
+.technology {
+    border-radius: 150px;
+    margin-bottom: 17px;
+}
+
+/*Section 2 end*/
+
+
+
+
+/*Section 3*/
+.portfolio {
     min-width: 25%;
     max-width: 25%;
     height: 400px;
@@ -104,22 +252,34 @@ p.whoiam {
     margin: 0 -10px 0 10px;
 }
 
-.technology-item {
-    height: 225px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 30px 0 30px;
-    display: flex;
-    font-size: 36px;
-    font-family: 'Montserrat';
-    font-weight: 400;
+.portfoliowork {
+    max-width: 100%;
+    text-align: center;
 }
 
-.row {
+.square {
+    width: 225px;
+    height: 225px;
+    background-color: var(--color-light);
+    margin-bottom: 17px;
+}
+
+
+/*Section 3 end*/
+
+
+
+
+/*Section 4 */
+
+.cellteam {
+    min-width: 25%;
+    max-width: 25%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
+    margin: 0 -10px 0 10px;
 }
 
 .teammember {
@@ -135,82 +295,18 @@ p.whoiam {
     margin-bottom: 17px;
 }
 
-.technology {
-    border-radius: 150px;
-    margin-bottom: 17px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline;
-    padding: 0px;
-    padding: 20px 0 20px 0;
-    margin-right: 153px;
-    ;
-}
-
-.drop-down-menu {
-    display: none;
-    position: absolute;
-    padding-top: 15px;
-    background-color: #f1f1f1;
-    min-width: 80px;
-    left: -40px;
-    margin-top: 15px;
-    margin-right: 50px;
-    padding-right: 50px;
-    border-radius: 20px;
-    z-index: 1;
-}
-
-.drop-down-menu .el {
-    color: black;
-    padding: 12px 40px;
-    margin-right: 0px;
-    display: block;
-    margin-right: -50px;
-    border-radius: 20px;
-}
+/*Section 4 end*/
 
 
-.drop-down-menu li:hover {
-    background-color: gainsboro;
-    color: var(--color-light)
-}
 
-.dropdown:hover .drop-down-menu {
-    display: block;
-}
 
-#svgcolorfill {
-    fill: var(--color-light);
-}
 
-#svgcolorstroke {
-    stroke: var(--color-light);
-    stroke-width: 3px;
-}
-
-.el:hover {
-    color: var(--color-light);
-}
-
-.logo {
-    margin-left: 95px;
-    width: 152px;
-    height: 44px;
-}
-.mainimg{
-width: 1190px;
-height: 277px;
-left: 365px;
-top: 322px;
-margin-top: 181px;
-}
-.mainwords{
-    margin-top: 165px;
-}
-.btndown{
-    padding-bottom: 69px;
-    padding-top: 83px;
-}
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
