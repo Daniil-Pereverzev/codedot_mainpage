@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-wrapper textmontserrat whitetext">
+    <header class="header">
+            <div class="header-wrapper textmontserrat whitetext">
             <div class="logo">
                 <object data="img/Logo.svg" alt="Logo"></object>
             </div>
-            <nav>
+            <nav class="navigation">
                 <ul class="hr">
                     <li class="el"> <a href="#tech">TECHNOLOGY</a></li>
 
@@ -26,17 +26,15 @@
                     <li class="el"><a href="#cont">CONTACT</a></li>
                 </ul>
             </nav>
+            <div class="dropdown"><span class="el">EN</span>
+                <ul class="drop-down-menu lang-selector">
+                    <li class="el"><a href="#">Russian</a></li>
+                    <li class="el"><a href="#">English</a></li>
+                    <li class="el"><a href="#">Deutsch</a></li>
+                </ul>
+            </div>
+
             <div>
-                <div class="dropdown"><span class="el">EN</span>
-                    <ul class="drop-down-menu lang-selector">
-                        <li class="el"><a href="#">RU</a></li>
-                        <li class="el"><a href="#">EN</a></li>
-                        <li class="el"><a href="#">DE</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <object data="img/burger_menu.svg" class="gamburgmenu"></object>
-                </div>
             </div>
     </header>
 
@@ -45,59 +43,66 @@
         <div>
             <!--main section-->
             <div class="container_head">
-                <object data="img/main_img.svg" class="mainimg"></object>
-                <p class=" whitetext textmodern mainwords">Web application / Business card sites / Online shopping </p>
+                <div> <object data="img/main_img.svg" class="mainimg"></object></div>
+                <div>
+                    <ul class="whitetext textmodern mainwords">
+                        <li class="el">Web applications</li>
+                        <li class="el slashslash">Business card sites</li>
+                        <li class="el">Online shopping</li>
+                    </ul>
+                </div>
                 <div class="btndown"><object data="img/btn_down.svg"></object></div>
             </div>
             <!--End main-->
         </div>
     </section>
-    </div>
     <section class="technology_section">
         <div>
-            <h2><a name="tech"></a>TECHNOLOGY</h2>
-            <div class="row">
+            <div class="technology_header">
+                <h2><a name="tech"></a>TECHNOLOGY</h2>
+            </div>
+            <div class="row1">
                 <div class="technology-item">
                     <div class="technology-cell">
                         <div class="technology"><object data="img/tech.svg"></object>
                         </div>
-                        <p>Technology</p>
+                        <p class="technology_p">Technology</p>
                     </div>
                 </div>
                 <div class="technology-item">
                     <div class="technology-cell">
                         <div class="technology"><object data="img/tech.svg"></object></div>
-                        <p>Technology</p>
+                        <p class="technology_p">Technology</p>
                     </div>
                 </div>
                 <div class="technology-item">
                     <div class="technology-cell">
                         <div class="technology"><object data="img/tech.svg"></object></div>
-                        <p>Technology</p>
+                        <p class="technology_p">Technology</p>
                     </div>
                 </div>
                 <div class="technology-item">
                     <div class="technology-cell">
                         <div class="technology"><object data="img/tech.svg"></object></div>
-                        <p>Technology</p>
+                        <p class="technology_p">Technology</p>
                     </div>
                 </div>
                 <div class="technology-item">
                     <div class="technology-cell">
                         <div class="technology"><object data="img/tech.svg"></object></div>
-                        <p>Technology</p>
+                        <p class="technology_p">Technology</p>
                     </div>
                 </div>
                 <div class="technology-item">
                     <div class="technology-cell">
                         <div class="technology"><object data="img/tech.svg"></object></div>
-                        <p>Technology</p>
+                        <p class="technology_p">Technology</p>
                     </div>
                 </div>
                 <div class="technology-item">
                     <div class="technology-cell">
                         <div class="technology"><object data="img/tech.svg"></object></div>
-                        <p>Technology</p>
+                        <p class="technology_p">Technology</p>
                     </div>
                 </div>
             </div>
@@ -106,7 +111,9 @@
     </section>
     <section class="portfolio_section">
         <div>
-            <h2><a name="port"></a>PORTFOLIO</h2>
+            <div class="portfolio_header">
+                <h2><a name="port"></a>PORTFOLIO</h2>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="portfolio">
@@ -146,14 +153,16 @@
                         </div>
                     </div>
                 </div>
-                <p class="textmontserrat"
-                    style="padding-top: 153px; padding-bottom: 76px; text-decoration: underline var(--color-light);"><a
-                        href="#"></a>Show more</p>
+                <div class="show_more_row">
+                        
+                            <a href="#" class="textmontserrat show_more_link"><p class="underline_show_more_btn">Show more</p></a>
+                        
+                </div>
             </div>
         </div>
     </section>
-    <section style="margin-bottom: 200px;">
-        <div style="margin-left: 25px;">
+    <section class="team_section">
+        <div class="team_header">
             <h2><a name="team"></a>TEAM</h2>
         </div>
         <div class="container">
@@ -162,30 +171,30 @@
                     <div class="teammember">
                         <div class="circle" style="background-image:url(img/portfolio.jpg);">
                         </div>
-                        <h3 class="name">Name Last name</h3>
-                        <p class="whoiam">Who i am</p>
+                        <h3 class="name">Name</h3>
+                        <p class="whoiam">Who</p>
                     </div>
                 </div>
                 <div class="cellteam">
                     <div class="teammember">
                         <div class="circle" style="background-image:url();"></div>
-                        <h3 class="name">Name Last name</h3>
-                        <p class="whoiam">Who i am</p>
+                        <h3 class="name">Name</h3>
+                        <p class="whoiam">Who</p>
                     </div>
                 </div>
                 <div class="cellteam">
                     <div class="teammember">
                         <div class="circle" style="background-image:url(img/portfolio.jpg);">
                         </div>
-                        <h3 class="name">Name Last name</h3>
-                        <p class="whoiam">Who i am</p>
+                        <h3 class="name">Name</h3>
+                        <p class="whoiam">Who</p>
                     </div>
                 </div>
                 <div class="cellteam">
                     <div class="teammember">
                         <div class="circle" style="background-image:url();"></div>
-                        <h3 class="name">Name Last name</h3>
-                        <p class="whoiam">Who i am</p>
+                        <h3 class="name">Name</h3>
+                        <p class="whoiam">Who</p>
                     </div>
                 </div>
             </div>
@@ -194,7 +203,7 @@
         </div>
 
     </section>
-    <section>
+    <section class="map_section">
         <div>
         </div>
     </section>
