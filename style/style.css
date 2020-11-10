@@ -38,9 +38,11 @@
     .container_head {
         padding-top: 141px;
         text-align: center;
-        display: block;
+        display: flex;
         max-width: 1210px;
         margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .container {
@@ -77,13 +79,6 @@
         text-decoration: none;
     }
 
-    .row1 {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        overflow: hidden;
-    }
-
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -100,6 +95,7 @@
         top: 0;
         width: 100%;
         background: rgba(31, 31, 31, 0.6);
+        z-index: 999;
     }
 
     .navigation {
@@ -246,6 +242,7 @@
         /*83*/
         width: 88px;
         height: 136px;
+        margin: auto;
     }
 
     /*Section 1 end*/
@@ -291,6 +288,13 @@
     .technology_p {
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+    .row_technology {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        overflow: hidden;
     }
 
     /*Section 2 end*/
@@ -432,6 +436,13 @@
 
     }
 
+    .row_team {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        overflow: hidden;
+    }
+
     /*Section 4 end*/
 
     /*Section 5*/
@@ -523,7 +534,7 @@
         text-decoration: none;
     }
 
-    .row1 {
+    .row_technology {
         display: flex;
         justify-content: space-between;
         align-content: center;
@@ -546,6 +557,7 @@
         top: 0;
         width: 100%;
         background: rgba(31, 31, 31);
+        z-index: 999;
     }
 
     .navigation {
@@ -685,7 +697,7 @@
         content: "/";
         font-size: 60px;
         margin-left: 59px;
-display: none;
+        display: none;
     }
 
     .btndown {
@@ -695,6 +707,7 @@ display: none;
         /*83*/
         width: 46px;
         height: 71px;
+        margin: auto;
     }
 
     /*Section 1 end*/
@@ -726,12 +739,15 @@ display: none;
         margin-bottom: 30px;
     }
 
-    .figure{
-        transform: scale(0.25,0.25);
+    .figure {
+        transform: scale(0.25, 0.25);
     }
+
     .technology_section {
         margin-top: 0px;
         height: 206px;
+        background-color:#1F1F1F;
+        color: #000;
     }
 
     .technology_header {
@@ -739,11 +755,20 @@ display: none;
         margin-bottom: 0px;
         padding-top: 41px;
         padding-bottom: 38px;
+        color: white;
     }
 
     .technology_p {
         margin-top: 0px;
         margin-bottom: 0px;
+    }
+
+
+    .row_technology {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        overflow: hidden;
     }
 
     /*Section 2 end*/
@@ -805,7 +830,7 @@ display: none;
     .underline_show_more_btn {
         margin-top: 0px;
         margin-bottom: -20px;
-        
+
     }
 
     .portfolio:hover .portfolio_info {
@@ -815,9 +840,9 @@ display: none;
     .portfolio_info {
         width: 235px;
         height: 50px;
-        background-color: rgba(31, 31, 31, 0.5);
+        background-color: #fff;
         position: absolute;
-        display: none;
+        display: block;
     }
 
     .portfolio_name {
@@ -826,6 +851,7 @@ display: none;
         margin-bottom: 0px;
         font-size: 20px;
         line-height: 20px;
+        color:black;
     }
 
     .portfolio_date {
@@ -834,6 +860,7 @@ display: none;
         font-weight: 300;
         font-size: 14px;
         line-height: 14px;
+        color:black;
     }
 
     /*Section 3 end*/
@@ -842,7 +869,15 @@ display: none;
 
 
     /*Section 4 */
+    .row_team {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
     .team_header {
+        color: white;
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 35px;
@@ -850,15 +885,18 @@ display: none;
     }
 
     .team_section {
-        height: 869px;
+        height: 478px;
+        background-color:#1F1F1F;
     }
 
     .cellteam {
         height: 148px;
         justify-content: center;
-        align-items: baseline;
         display: flex;
         width: 77px;
+        align-items: center;
+        min-width: 34%;
+        margin-bottom: 51px;
     }
 
     .teammember {
@@ -875,15 +913,17 @@ display: none;
     }
 
     .name {
-        margin-top: 15px;
+        margin-top: 9px;
         margin-bottom: 0px;
         font-family: var(--font-family);
         font-size: 16px;
+        color: white;
     }
 
     .whoiam {
-        margin-top: 24px;
+        margin-top: 22px;
         font-size: 16px;
+        color: white;
         font-family: var(--font-family);
     }
 
