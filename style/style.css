@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=MuseoModerno:wght@400;700&display=swap');
 
 :root {
-    --color-light: rgb(0, 255, 0);
+    --color-light: rgb(252, 255, 72);
     --name-font-size: 28px;
     --who-font-size: 27px;
     --font-family: Montserrat;
@@ -164,6 +164,7 @@ h2 {
 
 .dropdown:hover .drop-down-menu {
     display: block;
+    transition: display 1000s;
 }
 
 .hr {
@@ -315,6 +316,8 @@ margin-bottom: 0px;
     width: 311px;
     height: 293px;
     background-color: var(--color-light);
+    display: flex;
+    align-items: end;
 }
 .portfolio_header{
     margin-bottom: 74px; /*90*/
@@ -335,6 +338,30 @@ justify-content: center;
 .underline_show_more_btn{
     margin-top: 0px;
 margin-bottom: -20px;
+}
+.portfolio:hover .portfolio_info{
+display: block;
+}
+.portfolio_info{
+    width: 311px;
+    height: 50px;
+    background-color: rgba(31,31,31,0.5);
+    position: absolute;
+    display: none;
+}
+.portfolio_name{
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 31px;
+    line-height: 31px;
+}
+.portfolio_date{
+    margin-bottom: 6px;
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 /*Section 3 end*/
@@ -396,6 +423,24 @@ padding-bottom: 64px;
 .map_section{
     height: 1080px;
     background-color:black;
-    background-image: url(/img/map.png)
+    background-image: url(/img/map.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.mark{
+position: relative;
+display: flex;
+}
+.mark:hover .contact{
+display: block;
+}
+.contact{
+    display: none;
+    position: absolute;
+    margin-top: -258px;
 }
 /*Section 5 end*/
