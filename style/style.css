@@ -828,6 +828,7 @@
         background-color: var(--color-light);
         display: flex;
         align-items: end;
+        position: relative;
     }
 
     .portfolio_header {
