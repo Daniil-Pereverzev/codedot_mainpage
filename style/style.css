@@ -870,6 +870,7 @@
         background-color: #fff;
         position: absolute;
         display: block;
+        bottom: 0;
     }
 
     .portfolio_name {
