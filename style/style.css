@@ -16,10 +16,11 @@
     stroke-width: 3px;
 }
 
-.link_without_enything{
+.link_without_enything {
     padding: 0px;
     margin: 0px;
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -119,8 +120,9 @@ body {
         text-decoration: none;
         width: 1200px
     }
+
     .header_right {
-        
+
         width: 75px;
         display: flex;
         align-items: center;
@@ -273,8 +275,8 @@ body {
         font-size: 36px;
         font-family: 'Montserrat';
         font-weight: 400;
-        margin-left: -79px;
-        margin-right: -98px;
+        margin-left: -82px;
+        margin-right: -82px;
     }
 
     .technology-cell {
@@ -492,7 +494,7 @@ body {
     /*Section 5 end*/
 }
 
-@media (min-width:320px) and (max-width:1200px) {
+@media (max-width:768px) {
     body {
         padding: 0;
         margin: 0;
@@ -509,9 +511,13 @@ body {
         color: var(--color-light)
     }
 
-    .link_without_enything{
+    .link_without_enything {
         padding: 0px;
         margin: 0px;
+    }
+
+    .whiteinmobile{
+        color:#fff;
     }
     .container_head {
         text-align: center;
@@ -588,8 +594,9 @@ body {
         display: none;
         justify-content: right;
     }
+
     .header_right {
-        
+
         width: 118px;
         display: flex;
         align-items: center;
@@ -680,10 +687,10 @@ body {
         display: block;
     }
 
-    .gamburgmenu:hover .navigation{
+    .gamburgmenu:hover .navigation {
         display: block;
     }
-    
+
 
     /*Header end*/
 
@@ -765,21 +772,32 @@ body {
 
     .technology-cell {
         text-align: center;
+        width: 70px;
+        height: 53px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     .technology {
         border-radius: 150px;
         margin-bottom: 2px;
+        width: 36px;
+        height: 36px;
+        position: relative;
+
     }
 
     .figure {
-        transform: scale(0.25, 0.25);
+        width: 36px;
+        height: 36px;
     }
 
     .technology_section {
         margin-top: 0px;
         height: 206px;
-        background-color:#1F1F1F;
+        background-color: #1F1F1F;
         color: #fff;
     }
 
@@ -792,7 +810,7 @@ body {
     }
 
     .technology_p {
-        margin-top: 0px;
+        margin-top: 7px;
         margin-bottom: 0px;
     }
 
@@ -886,7 +904,7 @@ body {
         margin-bottom: 0px;
         font-size: 20px;
         line-height: 20px;
-        color:black;
+        color: black;
     }
 
     .portfolio_date {
@@ -895,7 +913,7 @@ body {
         font-weight: 300;
         font-size: 14px;
         line-height: 14px;
-        color:black;
+        color: black;
     }
 
     /*Section 3 end*/
@@ -922,7 +940,7 @@ body {
 
     .team_section {
         height: 478px;
-        background-color:#1F1F1F;
+        background-color: #1F1F1F;
     }
 
     .cellteam {
