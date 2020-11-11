@@ -305,7 +305,10 @@ body {
         margin-top: 0px;
         margin-bottom: 0px;
     }
-
+    .figure{
+        width: 150px;
+        height: 150px;
+    }
     .row_technology {
         display: flex;
         justify-content: space-between;
