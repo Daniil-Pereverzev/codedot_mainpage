@@ -7,6 +7,9 @@
     --font-family: Montserrat;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 #svgcolorfill {
     fill: var(--color-light);
 }
@@ -126,6 +129,7 @@ body {
         width: 935px;
         display: none;
         justify-content: right;
+        order: 10;
     }
 
     .header_right {
@@ -1507,4 +1511,13 @@ body {
     }
 
     /*Section 5 end*/
+}
+
+@media (max-height:500px){
+    .btndown{
+        padding-top: 0px;
+    }
+    .mainimg{
+        margin-top: 85px;
+    }
 }
