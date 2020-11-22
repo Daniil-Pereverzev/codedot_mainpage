@@ -31,8 +31,12 @@ a {
     padding: 20px;
 }
 
+a:hover{
+    color: var(--color-light);
+}
+
 a:active {
-    color: var(--color-light)
+    color: var(--color-light);
 }
 
 .whitetext {
