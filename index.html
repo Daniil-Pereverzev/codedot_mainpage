@@ -12,26 +12,25 @@
 <body>
     <header class="header">
         <div class="header-wrapper textmontserrat whitetext">
-            <div>
-                <a href="#head"><object data="img/Logo.svg" alt="Logo" class="logo"></object></a>
-            </div>
-            <nav class="navigation">
-                <ul class="hr">
-                    <li class="el"> <a href="#tech">TECHNOLOGY</a></li>
-
-                    <li class="el"><a href="#port">PORTFOLIO</a></li>
-
-                    <li class="el"><a href="#team">TEAM</a></li>
-
-                    <li class="el"><a href="#cont">CONTACT</a></li>
-                </ul>
+            <a href="#head"><object data="img/Logo.svg" alt="Logo" class="logo"></object></a>
+            <div class="ad-menu">
+            <nav class="navigation" tabindex="1">
+            <ul class="hr">
+            <li class="el"> <a href="#tech" class="nav_link">TECHNOLOGY</a></li>
+            <li class="el"><a href="#port" class="nav_link">PORTFOLIO</a></li>
+            <li class="el"><a href="#team" class="nav_link">TEAM</a></li>
+            <li class="el"><a href="#cont" class="nav_link">CONTACT</a></li>
+            </ul>
             </nav>
+            </div>
+    
+    
             <div class="header_right">
-                <div class="dropdown"><span class="el">EN</span>
+                <div class="dropdown"><span class="el nav_link">EN</span>
                     <ul class="drop-down-menu lang-selector">
-                        <li class="el"><a href="#">Russian</a></li>
-                        <li class="el"><a href="#">English</a></li>
-                        <li class="el"><a href="#">Deutsch</a></li>
+                        <li class="el"><a href="#" class="nav_link">Russian</a></li>
+                        <li class="el"><a href="#" class="nav_link">English</a></li>
+                        <li class="el"><a href="#" class="nav_link">Deutsch</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,10 +38,10 @@
 
     <section class="background main_section">
         <div class="container_head">
-            <a name="head"></a>
+            <a name="head" class="anchor_link"></a>
             <div> <object data="img/main_img.svg" class="mainimg"></object></div>
             <div>
-                <ul class="whitetext textmodern mainwords">
+                <ul class="whitetext main_section_text mainwords">
                     <li class="el">Web applications</li>
                     <li class="el slashslash">Business card sites</li>
                     <li class="el">Online shopping</li>
@@ -51,83 +50,82 @@
             <div><object data="img/btn_down.svg" class="btndown"></object></div>
         </div>
     </section>
-        <section class="portfolio_section">
-        <div>
-            <div class="portfolio_header">
-                <a name="port" class=" link_without_enything">
-                    <h2>PORTFOLIO</h2>
-                </a>
+    <section class="portfolio_section">
+
+        <div class="portfolio_header">
+            <a name="port" class=" link_without_enything">
+                <h2>PORTFOLIO</h2>
+            </a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="portfolio">
+                    <div class="portfoliowork">
+                        <div class="square" style="background-image:url(img/portfolio.jpg);">
+                            <div class="portfolio_info">
+                                <p class="textmontserrat whitetext portfolio_name">Name</p>
+                                <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfoliowork">
+                        <div class="square" style="background-image:url();">
+                            <div class="portfolio_info">
+                                <p class="textmontserrat whitetext portfolio_name">Name</p>
+                                <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfoliowork">
+                        <div class="square" style="background-image:url(img/portfolio.jpg);">
+                            <div class="portfolio_info">
+                                <p class="textmontserrat whitetext portfolio_name">Name</p>
+                                <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfoliowork">
+                        <div class="square" style="background-image:url();">
+                            <div class="portfolio_info">
+                                <p class="textmontserrat whitetext portfolio_name">Name</p>
+                                <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfoliowork">
+                        <div class="square" style="background-image:url(img/portfolio.jpg);">
+                            <div class="portfolio_info">
+                                <p class="textmontserrat whitetext portfolio_name">Name</p>
+                                <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <div class="portfoliowork">
+                        <div class="square" style="background-image:url();">
+                            <div class="portfolio_info">
+                                <p class="textmontserrat whitetext portfolio_name">Name</p>
+                                <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="portfolio">
-                        <div class="portfoliowork">
-                            <div class="square" style="background-image:url(img/portfolio.jpg);">
-                                <div class="portfolio_info">
-                                    <p class="textmontserrat whitetext portfolio_name">Name</p>
-                                    <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div class="portfoliowork">
-                            <div class="square" style="background-image:url();">
-                                <div class="portfolio_info">
-                                    <p class="textmontserrat whitetext portfolio_name">Name</p>
-                                    <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div class="portfoliowork">
-                            <div class="square" style="background-image:url(img/portfolio.jpg);">
-                                <div class="portfolio_info">
-                                    <p class="textmontserrat whitetext portfolio_name">Name</p>
-                                    <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div class="portfoliowork">
-                            <div class="square" style="background-image:url();">
-                                <div class="portfolio_info">
-                                    <p class="textmontserrat whitetext portfolio_name">Name</p>
-                                    <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div class="portfoliowork">
-                            <div class="square" style="background-image:url(img/portfolio.jpg);">
-                                <div class="portfolio_info">
-                                    <p class="textmontserrat whitetext portfolio_name">Name</p>
-                                    <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <div class="portfoliowork">
-                            <div class="square" style="background-image:url();">
-                                <div class="portfolio_info">
-                                    <p class="textmontserrat whitetext portfolio_name">Name</p>
-                                    <p class="textmontserrat whitetext portfolio_date">02/10/2020</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="show_more_row">
+            <div class="show_more_row">
 
-                    <a href="#" class="textmontserrat show_more_link">
-                        <p class="underline_show_more_btn">Show more</p>
-                    </a>
+                <a href="#" class="textmontserrat show_more_link">
+                    <p class="underline_show_more_btn">Показать ещё</p>
+                </a>
 
-                </div>
             </div>
         </div>
     </section>

@@ -7,7 +7,21 @@
     --font-family: Montserrat;
 }
 
-html{
+.anchor_link {
+    width: 0px;
+    height: 0px;
+    line-height: 0px;
+}
+
+.main_section_text {
+    font-family: MuseoModerno;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'MuseoModerno';
+    letter-spacing: -0.01em;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -25,17 +39,17 @@ html{
     margin: 0px;
 }
 
-a {
+.nav_link {
     color: #fff;
     text-decoration: none;
     padding: 20px;
 }
 
-a:hover{
+.nav_link:hover {
     color: var(--color-light);
 }
 
-a:active {
+.nav_link:active {
     color: var(--color-light);
 }
 
@@ -48,8 +62,9 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    width: 100vw;
 }
+
+
 
 @media (max-width:900px) {
     body {
@@ -73,9 +88,14 @@ body {
         margin: 0px;
     }
 
-    .whiteinmobile{
-        color:#fff;
+    .navigation{
+        display: none;
     }
+
+    .whiteinmobile {
+        color: #fff;
+    }
+
     .container_head {
         text-align: center;
         display: flex;
@@ -102,12 +122,7 @@ body {
 
 
 
-    .textmodern {
-        font-size: 20px;
-        text-align: center;
-        font-family: 'MuseoModerno';
-        letter-spacing: -0.01em;
-    }
+
 
     .textmontserrat {
         font-size: 14px;
@@ -137,13 +152,6 @@ body {
         width: 100vw;
         background: rgba(31, 31, 31);
         z-index: 999;
-    }
-
-    .navigation {
-        width: 935px;
-        display: none;
-        justify-content: right;
-        order: 10;
     }
 
     .header_right {
@@ -312,6 +320,10 @@ body {
         margin-top: 0px;
         height: 1619px;
         background-color: #F6F6F6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     .portfolio {
@@ -399,7 +411,7 @@ body {
     /*Section 3 end*/
 }
 
-@media (min-width:900px) and (max-width:1300px){
+@media (min-width:900px) and (max-width:1300px) {
     .link_without_enything {
         padding: 0px;
         margin: 0px;
@@ -431,15 +443,6 @@ body {
         font-weight: 700;
         margin: 0px 0px 0px 0px;
         color: #000;
-    }
-
-
-
-    .textmodern {
-        font-size: 25px;
-        text-align: center;
-        font-family: 'MuseoModerno';
-        letter-spacing: -0.01em;
     }
 
     .textmontserrat {
@@ -567,16 +570,17 @@ body {
     .gamburgmenu:hover .navigation {
         display: block;
     }
+
     /*Header end*/
 
 
-        
+
     /*Section 1*/
     .main_section {
         height: 100vh;
         display: flex;
         justify-content: center;
-        align-items:center;
+        align-items: center;
     }
 
     .mainimg {
@@ -598,7 +602,6 @@ body {
         align-items: center;
         font-style: normal;
         font-weight: normal;
-        padding-left: 16px;
     }
 
     .slashslash::before {
@@ -627,6 +630,10 @@ body {
         margin-top: 0px;
         padding-bottom: 80px;
         background-color: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     .portfolio {
@@ -712,9 +719,8 @@ body {
     .container_head {
         text-align: center;
         display: flex;
-        height: 100vh;
-        width: 1300px;
-        margin: 0 auto;
+        height: 100%;
+        width: 1200px;
         flex-direction: column;
         justify-content: center;
     }
@@ -722,7 +728,7 @@ body {
     .container {
         text-align: center;
         display: block;
-        max-width: 1185px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -738,14 +744,6 @@ body {
         color: #000;
     }
 
-
-
-    .textmodern {
-        font-size: 36px;
-        text-align: center;
-        font-family: 'MuseoModerno';
-        letter-spacing: -0.01em;
-    }
 
     .textmontserrat {
         font-size: 25px;
@@ -877,7 +875,7 @@ body {
     /*Section 1*/
     .main_section {
         height: 100vh;
-        display: flex;  
+        display: flex;
         justify-content: center;
         align-items: center;
     }
@@ -885,13 +883,14 @@ body {
     .mainimg {
         width: 1190px;
         height: 277px;
-        padding-top: 75px;
+        padding-top: 143px;
     }
 
-    .mainwords {
+    .main_section_text {
         padding-top: 42px;
         padding-left: 0px;
-        margin:0px;
+        margin: 0px;
+        font-size: 30px;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -903,30 +902,27 @@ body {
         align-items: center;
         font-style: normal;
         font-weight: normal;
-        padding-left: 16px;
     }
 
     .slashslash::before {
         content: "/";
         font-size: 60px;
-        margin-right: 60px;
+        margin-right: 100px;
     }
 
     .slashslash::after {
         content: "/";
         font-size: 60px;
-        margin-left: 59px;
+        margin-left: 100px;
 
     }
 
     .btndown {
         padding-bottom: 0px;
-        /*69*/
-
-        /*83*/
         width: 88px;
-        height: 147px;
+        height: 136px;
         margin: auto;
+        bottom: 0;
     }
 
     /*Section 1 end*/
@@ -934,16 +930,18 @@ body {
     /*Section 3*/
     .portfolio_section {
         margin-top: 0px;
-        height: 1173px;
         background-color: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .portfolio {
-        width: 311px;
+        width: 367px;
         justify-content: space-between;
         align-items: center;
         display: flex;
-        padding-bottom: 83px;
+        padding-bottom: 47px;
     }
 
     .portfoliowork {
@@ -952,8 +950,8 @@ body {
     }
 
     .square {
-        width: 311px;
-        height: 293px;
+        width: 367px;
+        height: 346px;
         background-color: var(--color-light);
         display: flex;
         align-items: end;
@@ -961,9 +959,8 @@ body {
     }
 
     .portfolio_header {
-        margin-bottom: 74px;
-        /*90*/
-        padding-top: 99px;
+        margin-bottom: 90px;
+        padding-top: 79px;
     }
 
     .show_more_row {
@@ -972,7 +969,7 @@ body {
     }
 
     .show_more_link {
-        margin-top: 43px;
+        margin-top: 44px;
         font-size: 36px;
         text-align: center;
         display: initial;
@@ -990,8 +987,8 @@ body {
     }
 
     .portfolio_info {
-        width: 311px;
-        height: 50px;
+        width: 100%;
+        height: 60px;
         background-color: rgba(31, 31, 31, 0.5);
         position: absolute;
         display: none;
@@ -1000,7 +997,7 @@ body {
 
     .portfolio_name {
         font-weight: 700;
-        margin-top: 0px;
+        margin-top: 7px;
         margin-bottom: 0px;
         font-size: 31px;
         line-height: 31px;
@@ -1015,13 +1012,4 @@ body {
     }
 
     /*Section 3 end*/
-}
-
-@media (max-height:500px){
-    .btndown{
-        padding-top: 0px;
-    }
-    .mainimg{
-        margin-top: 85px;
-    }
 }
