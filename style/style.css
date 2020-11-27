@@ -98,10 +98,7 @@ body {
 
     .container_head {
         text-align: center;
-        display: flex;
         max-width: 100%;
-        flex-direction: column;
-        justify-content: center;
     }
 
     .container {
@@ -155,11 +152,11 @@ body {
     }
 
     .header_right {
-
         width: 118px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        margin-right: 25px;
     }
 
     .header-wrapper {
@@ -181,7 +178,7 @@ body {
 
     .logo {
         width: 76px;
-        margin-left: 23px;
+        margin-left: 2px;
     }
 
     .dropdown {
@@ -228,7 +225,7 @@ body {
     .hr {
         margin: 0;
         padding-left: 0px;
-        display: flex;
+        display: table;
         width: 848px;
         justify-content: space-around;
     }
@@ -243,14 +240,6 @@ body {
         color: var(--color-light);
     }
 
-    .gamburgmenu {
-        display: block;
-    }
-
-    .gamburgmenu:hover .navigation {
-        display: block;
-    }
-
 
     /*Header end*/
 
@@ -259,20 +248,16 @@ body {
 
     /*Section 1*/
     .main_section {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
     }
 
     .mainimg {
         width: 303px;
-        margin-top: 150px;
+        margin-top: 157px;
     }
 
     .mainwords {
         margin-top: 21px;
-        /*165*/
         padding-left: 0px;
         margin-bottom: 0px;
         display: block;
@@ -303,9 +288,9 @@ body {
     }
 
     .btndown {
-        padding-bottom: 0px;
+        padding-bottom: 24px;
         /*69*/
-        padding-top: 96px;
+        padding-top: 94px;
         /*83*/
         width: 46px;
         height: 71px;
@@ -357,6 +342,7 @@ body {
     .show_more_row {
         display: flex;
         justify-content: center;
+        margin-top: -3px;
     }
 
     .show_more_link {
@@ -470,7 +456,6 @@ body {
     }
 
     .navigation {
-        width: 957px;
         display: none;
         justify-content: right;
     }
@@ -548,8 +533,7 @@ body {
     .hr {
         margin: 0;
         padding-left: 0px;
-        display: flex;
-        width: 848px;
+        display: table;
         justify-content: space-around;
     }
 
@@ -564,20 +548,52 @@ body {
     }
 
     .gamburgmenu {
+        position: relative;
         display: block;
+        padding: 20px 0 20px 0;
+        z-index: 100;
+    }
+    .gamburgmenu:hover .navigation,.gamburgmenu img:hover .navigation,
+    .gamburgmenu:hover .navigation .gamburgmenu_drop, .gamburgmenu img:hover .navigation .gamburgmenu_drop{
+    display: block;
     }
 
-    .gamburgmenu:hover .navigation {
-        display: block;
+    .gamburgmenu_drop {
+        display: none;
+        position: absolute;
+        padding-top: 15px;
+        background-color: rgba(31, 31, 31, 0.6);
+        left: -55px;
+        margin-top: 15px;
+        border-radius: 20px;
+        z-index: 1;
+        margin-top: 15px;
+        padding-right: 50px;
+        margin-right: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
     }
 
+    .gamburgmenu_drop .el {
+        right: 0px;
+        padding: 12px 15px;
+        margin-right: 0px;
+        display: block;
+        margin-right: -50px;
+        border-radius: 20px;
+    }
+
+    .gamburgmenu_drop li:hover {
+        background-color: rgba(12, 12, 12, 0.6);
+        color: var(--color-light)
+    }
     /*Header end*/
 
 
 
     /*Section 1*/
     .main_section {
-        height: 100vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -585,7 +601,7 @@ body {
 
     .mainimg {
         width: 100%;
-        padding-top: 10%;
+        padding-top: 20%;
         padding-bottom: 5%;
     }
 
@@ -621,6 +637,7 @@ body {
         width: 88px;
         height: 136px;
         margin: 0 auto;
+        padding-bottom: 40px;
     }
 
     /*Section 1 end*/
@@ -863,10 +880,12 @@ body {
         color: var(--color-light);
     }
 
-    .gamburgmenu {
+   /* .gamburgmenu {
+    }
+*/
+    .gamburger_img{
         display: none;
     }
-
     /*Header end*/
 
 
@@ -874,26 +893,28 @@ body {
 
     /*Section 1*/
     .main_section {
-        height: 100vh;
+        height: 93.4vh;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .mainimg {
         width: 1190px;
         height: 277px;
-        padding-top: 143px;
+        padding-top: 178px;
+padding-bottom: 34px;
     }
 
     .main_section_text {
-        padding-top: 42px;
+        padding-top: 3px;
+        padding-bottom: 29px;
         padding-left: 0px;
         margin: 0px;
         font-size: 30px;
         display: flex;
         justify-content: space-between;
         width: 100%;
+
     }
 
     .mainwords .el {
@@ -918,7 +939,7 @@ body {
     }
 
     .btndown {
-        padding-bottom: 0px;
+        padding-top: 0px;
         width: 88px;
         height: 136px;
         margin: auto;
