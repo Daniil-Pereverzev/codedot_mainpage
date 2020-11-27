@@ -88,7 +88,7 @@ body {
         margin: 0px;
     }
 
-    .navigation{
+    .navigation {
         display: none;
     }
 
@@ -196,7 +196,7 @@ body {
         margin-top: 15px;
         border-radius: 20px;
         z-index: 1;
-        margin-top: 15px;
+        margin-top: 20px;
         padding-right: 50px;
         margin-right: 0px;
         padding-top: 0px;
@@ -247,25 +247,41 @@ body {
         z-index: 100;
         order: 2;
     }
-    .gamburgmenu:hover .navigation,.gamburgmenu img:hover .navigation,
-    .gamburgmenu:hover .navigation .gamburgmenu_drop, .gamburgmenu img:hover .navigation .gamburgmenu_drop{
-    display: block;
+
+    .gamburgmenu:hover .navigation,
+    .gamburgmenu img:hover .navigation,
+    .gamburgmenu:hover .navigation .gamburgmenu_drop,
+    .gamburgmenu img:hover .navigation .gamburgmenu_drop {
+        display: block;
+        width: 204px;
     }
 
     .gamburgmenu_drop {
         display: none;
         position: absolute;
         padding-top: 15px;
-        background-color: rgba(31, 31, 31, 0.6);
+        background-color: rgba(245, 204, 61, 1);
         left: -105px;
+        top: -12px;
         margin-top: 15px;
-        border-radius: 20px;
         z-index: 1;
         margin-top: 15px;
         padding-right: 50px;
         margin-right: 0px;
         padding-top: 0px;
         padding-left: 0px;
+        width: 204px;
+        height: 367px;
+    }
+
+    .gamburger_drop_logo {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .gamburger_drop_link {
+        color: black;
     }
 
     .gamburgmenu_drop .el {
@@ -274,14 +290,14 @@ body {
         margin-right: 0px;
         display: block;
         margin-right: -50px;
-        border-radius: 20px;
+        border-bottom: 1px white solid;
     }
 
     .gamburgmenu_drop li:hover {
         background-color: rgba(12, 12, 12, 0.6);
         color: var(--color-light)
     }
-    
+
     /*Header end*/
 
 
@@ -502,7 +518,7 @@ body {
     }
 
     .header_right {
-        width: 20%;
+        width: 150px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -533,7 +549,7 @@ body {
     .dropdown {
         position: relative;
         display: inline;
-        padding: 20px 0 20px 0;
+        padding: 40px 0 40px 0;
     }
 
     .drop-down-menu {
@@ -541,15 +557,16 @@ body {
         position: absolute;
         padding-top: 15px;
         background-color: rgba(31, 31, 31, 0.6);
-        left: -55px;
+        left: -35px;
         margin-top: 15px;
         border-radius: 20px;
         z-index: 1;
-        margin-top: 15px;
+        margin-top: 35px;
         padding-right: 30px;
         margin-right: 0px;
         padding-top: 0px;
         padding-left: 0px;
+        width: 100px;
     }
 
     .drop-down-menu .el {
@@ -557,11 +574,11 @@ body {
         padding: 12px 15px;
         margin-right: 0px;
         display: block;
-        margin-right: -50px;
+        margin-right: -30px;
         border-radius: 20px;
     }
 
-    .drop-down-menu li:hover {
+    .drop-down-menu .el:hover {
         background-color: rgba(12, 12, 12, 0.6);
         color: var(--color-light)
     }
@@ -575,6 +592,7 @@ body {
         margin: 0;
         padding-left: 0px;
         display: table;
+        width: 100%;
         justify-content: space-around;
     }
 
@@ -595,23 +613,41 @@ body {
         z-index: 100;
         order: 2;
     }
-    .gamburgmenu:hover .navigation,.gamburgmenu img:hover .navigation,
-    .gamburgmenu:hover .navigation .gamburgmenu_drop, .gamburgmenu img:hover .navigation .gamburgmenu_drop{
-    display: block;
+
+    .gamburgmenu:hover .navigation,
+    .gamburgmenu img:hover .navigation,
+    .gamburgmenu:hover .navigation .gamburgmenu_drop,
+    .gamburgmenu img:hover .navigation .gamburgmenu_drop {
+        display: block;
+        width: 204px;
     }
 
     .gamburgmenu_drop {
         display: none;
         position: absolute;
-        background-color: rgba(31, 31, 31, 0.6);
-        left: -105px;
-        border-radius: 20px;
+        padding-top: 15px;
+        background-color: rgba(245, 204, 61, 1);
+        left: -90px;
+        top: -12px;
+        margin-top: 15px;
         z-index: 1;
         margin-top: 15px;
         padding-right: 50px;
         margin-right: 0px;
         padding-top: 0px;
         padding-left: 0px;
+        width: 204px;
+        height: 367px;
+    }
+
+    .gamburger_drop_logo {
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .gamburger_drop_link {
+        color: black;
     }
 
     .gamburgmenu_drop .el {
@@ -620,13 +656,14 @@ body {
         margin-right: 0px;
         display: block;
         margin-right: -50px;
-        border-radius: 20px;
+        border-bottom: 1px white solid;
     }
 
     .gamburgmenu_drop li:hover {
         background-color: rgba(12, 12, 12, 0.6);
         color: var(--color-light)
     }
+
     /*Header end*/
 
 
@@ -925,12 +962,15 @@ body {
         color: var(--color-light);
     }
 
-   /* .gamburgmenu {
-    }
-*/
-    .gamburger_img{
+    .gamburger_img {
         display: none;
     }
+
+    .gamburger_drop_logo {
+        display: none;
+    }
+
+
     /*Header end*/
 
 
@@ -1037,7 +1077,7 @@ body {
         margin-top: 44px;
         font-size: 36px;
         text-align: center;
-        display: initial; 
+        display: initial;
         text-decoration: none;
         border-bottom: 2px var(--color-light) solid;
         color: #000;
