@@ -731,13 +731,14 @@ body {
         font-size: 36px;
         text-align: center;
         display: initial;
-        border-bottom: 1px var(--color-light) solid;
+        text-decoration: none;
+        border-bottom: 2px var(--color-light) solid;
         color: #000;
     }
 
     .underline_show_more_btn {
         margin-top: 0px;
-        margin-bottom: -20px;
+        margin-bottom: -3px;
     }
 
     .portfolio:hover .portfolio_info {
@@ -1029,20 +1030,22 @@ body {
     .show_more_row {
         display: flex;
         justify-content: center;
+        padding-bottom: 60px;
     }
 
     .show_more_link {
         margin-top: 44px;
         font-size: 36px;
         text-align: center;
-        display: initial;
-        border-bottom: 1px var(--color-light) solid;
+        display: initial; 
+        text-decoration: none;
+        border-bottom: 2px var(--color-light) solid;
         color: #000;
     }
 
     .underline_show_more_btn {
         margin-top: 0px;
-        margin-bottom: -20px;
+        margin-bottom: -3px;
     }
 
     .portfolio:hover .portfolio_info {
